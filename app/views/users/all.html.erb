@@ -1,0 +1,6 @@
+<p>Registered users:</p>
+<ul>
+<% User.find_each do |user| %>
+  <li><%= user.email %></li>
+<% end %>
+</ul>
