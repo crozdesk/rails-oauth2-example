@@ -16,7 +16,7 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'twitter-bootstrap-rails', '~> 3.2'
 gem 'devise', '~> 3.4.1'
-gem 'omniauth-crozdesk', git: 'git@github.com:crozdesk/omniauth-crozdesk'
+gem 'omniauth-crozdesk', '~> 1.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
