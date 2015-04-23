@@ -1,2 +1,13 @@
 Hello, Sir! <br />
 You have <%= User.count %> users registered!
+<br />
+<br />
+<hr />
+Alternative buttons:<br />
+<%= link_to user_omniauth_authorize_path(:crozdesk) do %>
+  <%= image_tag "crozdesk-login-btn-01.png", width: 250 %>
+<% end %>
+<br />
+<%= link_to user_omniauth_authorize_path(:crozdesk) do %>
+  <%= image_tag "crozdesk-login-btn.png", width: 250, alt: "transparent" %>
+<% end %>

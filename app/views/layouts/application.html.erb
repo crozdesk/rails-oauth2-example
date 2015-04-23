@@ -44,7 +44,7 @@
           <li><p class="navbar-text">Hi, <%= current_user.email %></p></li>
           <%= menu_item "Logout", destroy_user_session_path, method: :delete %>
         <% else %>
-          <%= menu_item "Login", user_omniauth_authorize_path(:crozdesk) %>
+          <%= menu_item image_tag("cloud", class: "img-rounded", width: 20), user_omniauth_authorize_path(:crozdesk) %>
         <% end %>
         <%= menu_item "Users", users_all_path %>
       <% end %>
